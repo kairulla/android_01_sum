@@ -1,5 +1,5 @@
 # android_01_sum
-![изображение интерфейса](screenshot_folder/0000.png)
+![изображение интерфейса](screenshot_folder/icon.png)
 **********************************************
 ## **activity_main.xml**
 ```
