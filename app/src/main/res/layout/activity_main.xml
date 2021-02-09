@@ -25,7 +25,7 @@
         android:ems="10"
         android:hint="A="
         android:layout_marginTop="5dp"
-        android:inputType="textPersonName" />
+        android:inputType="numberSigned" />
 
     <!-- поле ввода текста на всю ширину экрана, с авто размером по высоте,
      любые символы и снизу отступ в 5dp -->
@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:hint="B="
         android:layout_marginBottom="5dp"
-        android:inputType="textPersonName" />
+        android:inputType="numberSigned" />
 
     <!-- кнопка на всю ширину экрана и с авто размером по высоте,
      при нажатии будет искать и вызывать метод "onClick",
