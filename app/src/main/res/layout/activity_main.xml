@@ -2,60 +2,70 @@
 
 <!-- будет линейная компоновка элементов, окно на весь экран,
 компоненты должны располагаться вертикально по-центру экрана -->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:gravity="center|top"
     android:orientation="vertical"
-    android:gravity="center">
+    android:paddingTop="100dp">
 
     <!-- картинка "androidify" на всю ширину экрана с масштабированием и по высоте 50 пикселей типа "dp" -->
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/androidify" />
 
     <EditText
         android:id="@+id/editText_a"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/darker_gray"
         android:ems="10"
         android:hint="A="
-        android:layout_marginTop="5dp"
-        android:inputType="numberSigned" />
+        android:inputType="numberSigned"
+        android:textSize="20sp" />
 
     <!-- поле ввода текста на всю ширину экрана, с авто размером по высоте,
      любые символы и снизу отступ в 5dp -->
     <EditText
         android:id="@+id/editText_b"
-        android:layout_width="match_parent"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray"
         android:hint="B="
-        android:layout_marginBottom="5dp"
-        android:inputType="numberSigned" />
+        android:inputType="numberSigned"
+        android:textSize="20sp" />
 
     <!-- кнопка на всю ширину экрана и с авто размером по высоте,
      при нажатии будет искать и вызывать метод "onClick",
      отступ по краям 5dp -->
     <Button
         android:id="@+id/button"
-        android:layout_width="match_parent"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
         android:onClick="onClick"
-        android:textColor="#256736"
-        android:text="СУММА" />
+        android:text="СУММА"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        app:backgroundTint="@color/blue" />
 
     <!-- текстовое поле для ответа на всю ширину экрана,
      с авто размером по высоте, по-центру экрана и заданным цветом текста -->
     <TextView
         android:id="@+id/textView_sum"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
         android:text="Введите цифры и нажмите кнопку сумма"
-        android:textColor="#256736"
-        android:gravity="center" />
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp" />
 </LinearLayout>
